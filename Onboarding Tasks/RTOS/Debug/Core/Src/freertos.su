@@ -1,0 +1,4 @@
+../Core/Src/freertos.c:80:6:MX_FREERTOS_Init	8	static
+../Core/Src/freertos.c:118:6:stepper_half_drive	16	static
+../Core/Src/freertos.c:187:6:UserLEDfunc	24	static
+../Core/Src/freertos.c:213:6:StepperMotorfunc	24	static
