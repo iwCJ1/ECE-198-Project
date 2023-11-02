@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block title %}Avatar{% endblock %}
+
+{% block page %}Reset your Avatar{% endblock %}
+
+{% block position %}
+    <li class="breadcrumb-item"><a href="/user">User</a></li>
+    <li class="breadcrumb-item active">Avatar</li>
+{% endblock %}
+
+{% block sidebar %}
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Profile
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/user/home" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Profile</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/user/avatar" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Avatar</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+{% endblock %}
+
+{% block main %}
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-6">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Change your avatar</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form method=post enctype=multipart/form-data>
+                <div class="card-body">
+                  <div class="form-group">
+                    <p>Please upload your new avatar with an image of at least 160x160 pix</p>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputFile">Upload your avatar</label>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input name="avatar" type="file" class="custom-file-input" id="avatar">
+                        <label class="custom-file-label" for="exampleInputFile">Select file</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+{% endblock %}
