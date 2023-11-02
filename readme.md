@@ -11,5 +11,5 @@ This is the firmwares and scripts of ECE-198 project: iStringe
   |   └── RTOS                   #Using RTOS to run two threads at the same time (use button to light up the LED while decreasing the speed of stepper motor)
   ├── iSyringe                   #Still developing
   ├── Nurse Station              #Waiting in line
-  └── IRiS Server Application    #Waiting in line
+  └── iRIS Server Cient          #Done
 ```
