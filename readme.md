@@ -10,6 +10,8 @@ This is the firmwares and scripts of ECE-198 project: iStringe
   |   ├── Stepper Motor          #Control and run a stepper motor with 'ULN2003'
   |   └── RTOS                   #Using RTOS to run two threads at the same time (use button to light up the LED while decreasing the speed of stepper motor)
   ├── iSyringe                   #Still developing
+  |   ├── WiFi(ESP8266)          #WiFi module (ESP8266) of the iSyringe client
+  |   └── Main(STM32)            #Still developing
   ├── Nurse Station              #Waiting in line
   └── iRIS Server Cient          #Done
 ```
