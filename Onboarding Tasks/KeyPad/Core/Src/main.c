@@ -53,6 +53,8 @@
 #define C3_PORT GPIOA
 #define C3_PIN GPIO_PIN_11
 
+#include "KeyPad.h"
+
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -323,7 +325,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  	  int a = 0;
+  	KeyPad_Init();
   while (1)
   {
     /* USER CODE END WHILE */
@@ -336,6 +338,8 @@ int main(void)
 		//char A;
 		//sprintf(A, "%d", a);
 		//ST7735_DrawCharS(10, 40, A, ST7735_BLACK, ST7735_GREEN,3);
+
+	  /*
 		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_RESET);
 		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
@@ -436,12 +440,15 @@ int main(void)
 						HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_RESET);
 										HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, GPIO_PIN_RESET);
 										HAL_GPIO_WritePin(GPIOA, GPIO_PIN_11, GPIO_PIN_RESET);
+*/
+	  ST7735_DrawCharS(10, 10, KeyPad_WaitForKeyGetChar(500), ST7735_BLACK, ST7735_GREEN,4);
+
 
 }
 
   }
   /* USER CODE END 3 */
-}
+
 
 /**
   * @brief System Clock Configuration
