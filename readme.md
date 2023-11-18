@@ -11,9 +11,9 @@ This is the firmwares and scripts of ECE-198 project: iStringe
   |   ├── KeyPad                 # Read the keypad and show the key the user press on the TFT screen
   |   ├── SMA4988                # New solution of controlling Stepper Motor
   |   └── RTOS                   # Using RTOS to run two threads at the same time (use button to light up the LED while decreasing the speed of stepper motor)
-  ├── iSyringe                   # Still developing
+  ├── iSyringe                   # Done
   |   ├── WiFi(ESP8266)          # WiFi module (ESP8266) of the iSyringe client
-  |   └── Main(STM32)            # Still developing
-  ├── Nurse Station              # Waiting in line
+  |   └── Main(STM32)            # Main function of STM32
+  ├── Nurse Station              # Done
   └── iRIS Server Cient          # Done
 ```
