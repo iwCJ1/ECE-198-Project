@@ -1,0 +1,17 @@
+../Core/Src/freertos.c:110:6:MX_FREERTOS_Init	8	static
+../Core/Src/freertos.c:186:5:char_to_int	16	static
+../Core/Src/freertos.c:220:6:first_screen	16	static
+../Core/Src/freertos.c:226:6:top_bar	16	static
+../Core/Src/freertos.c:238:6:screen_0	24	static
+../Core/Src/freertos.c:248:6:screen_1	24	static
+../Core/Src/freertos.c:263:6:bottom_bar	24	static
+../Core/Src/freertos.c:280:6:message_box	24	static
+../Core/Src/freertos.c:329:6:microDelay	16	static
+../Core/Src/freertos.c:338:6:step	24	static
+../Core/Src/freertos.c:354:6:StepperMotor	48	static
+../Core/Src/freertos.c:383:6:StepperInit	8	static
+../Core/Src/freertos.c:388:6:gui_render	32	static
+../Core/Src/freertos.c:464:6:buzzer	24	static
+../Core/Src/freertos.c:495:6:OrangeAlarmLight	24	static
+../Core/Src/freertos.c:527:6:WiFi	16	static
+../Core/Src/freertos.c:562:6:EmergencyStop	16	static
